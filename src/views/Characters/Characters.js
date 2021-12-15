@@ -20,6 +20,7 @@ export default function Characters() {
   async function getQuery() {
     const resp = await fetchCharacters(race, query);
     setChars(resp);
+    setQuery('');
   }
 
   return (
