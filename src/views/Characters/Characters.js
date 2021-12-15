@@ -7,6 +7,7 @@ import Controls from '../../components/Characters/Controls';
 export default function Characters() {
   const [chars, setChars] = useState([]);
   const [race, setRace] = useState('All');
+  const [query, setQuery] = useState('');
 
   useEffect(() => {
     const getChars = async () => {
@@ -18,7 +19,7 @@ export default function Characters() {
 
   return (
     <div>
-      <Controls race={race} setRace={setRace} />
+      <Controls race={race} setRace={setRace} query={query} setQuery={setQuery} />
       <CharactersList chars={chars} setChars={setChars} />
     </div>
   );

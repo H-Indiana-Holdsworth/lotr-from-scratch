@@ -13,12 +13,15 @@ function App() {
           <NavLink to="/" data-testid="home-link">
             Home
           </NavLink>
+
           <NavLink to="/films" data-testid="film-link">
             Films
           </NavLink>
+
           <NavLink to="/characters" data-testid="char-link">
             Characters
           </NavLink>
+
           <NavLink to="/books" data-testid="book-link">
             Books
           </NavLink>
@@ -27,9 +30,11 @@ function App() {
           <Route path="/films">
             <Films />
           </Route>
+
           <Route path="/characters">
             <Characters />
           </Route>
+
           <Route path="/books">
             <Books />
           </Route>
