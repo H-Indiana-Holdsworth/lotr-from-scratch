@@ -16,7 +16,7 @@ function App() {
           <NavLink to="/films" data-testid="film-link">
             Films
           </NavLink>
-          <NavLink to="/characters" data-testid="character-link">
+          <NavLink to="/characters" data-testid="char-link">
             Characters
           </NavLink>
           <NavLink to="/books" data-testid="book-link">
@@ -27,10 +27,10 @@ function App() {
           <Route path="/films">
             <Films />
           </Route>
-          <Route exact path="/characters">
+          <Route path="/characters">
             <Characters />
           </Route>
-          <Route exact path="/books">
+          <Route path="/books">
             <Books />
           </Route>
         </Switch>
