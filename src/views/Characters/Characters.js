@@ -17,9 +17,20 @@ export default function Characters() {
     getChars();
   }, [race]);
 
+  async function getQuery() {
+    const resp = await fetchCharacters(race, query);
+    setChars(resp);
+  }
+
   return (
     <div>
-      <Controls race={race} setRace={setRace} query={query} setQuery={setQuery} />
+      <Controls
+        race={race}
+        setRace={setRace}
+        query={query}
+        setQuery={setQuery}
+        getQuery={getQuery}
+      />
       <CharactersList chars={chars} setChars={setChars} />
     </div>
   );

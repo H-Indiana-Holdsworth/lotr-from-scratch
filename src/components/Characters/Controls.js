@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Controls({ race, setRace, query, setQuery }) {
+export default function Controls({ race, setRace, query, setQuery, getQuery }) {
   return (
     <div>
       <div>
@@ -21,6 +21,9 @@ export default function Controls({ race, setRace, query, setQuery }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
+      </div>
+      <div>
+        <button onClick={getQuery}>Search</button>
       </div>
     </div>
   );
