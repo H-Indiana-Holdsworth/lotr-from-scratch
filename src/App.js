@@ -24,7 +24,7 @@ function App() {
           </NavLink>
         </header>
         <Switch>
-          <Route exact path="/">
+          <Route path="/films">
             <Films />
           </Route>
           <Route exact path="/characters">
